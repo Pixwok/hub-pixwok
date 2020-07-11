@@ -1,3 +1,8 @@
+<?php
+include('auth.php');
+redirect();
+
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -15,6 +20,16 @@
     <title>Hub - Pixwok</title>
 </head>
 <body>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138887128-5"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-138887128-5');
+	</script>
+
     <div id="particles-js"></div>
     <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
@@ -26,7 +41,7 @@
             <div class="app">
                 <a target="blank" href="https://pixwok.fr/">
                     <div class="public">
-                        à propos
+                        blog
                     </div>
                 </a>
                 <a href="https://hardware.pixwok.fr/">
@@ -34,24 +49,14 @@
                         stuff
                     </div>
                 </a>
-                <a href="dev.html">
-                    <div class="public" >
-                        devblog
-                    </div>
-                </a>
-                <a href="dev.html">
+                <a href="dev.php">
                     <div class="dev">
-                        git
+                        documentation
                     </div>
                 </a>
-                <a href="dev.html">
+                <a href="https://pastebin.pixwok.fr/">
                     <div class="dev">
                         pastebin
-                    </div>
-                </a>
-                <a href="dev.html">
-                    <div class="dev">
-                        api
                     </div>
                 </a>
                 <a target="blank" href="https://grafana.pixwok.fr/">
@@ -59,17 +64,17 @@
                         grafana
                     </div>
                 </a>
-                <a target="blank" href="https://manage-db.wailcast.fr/">
+                <a target="blank" href="https://manage-db.pixwok.fr/">
                     <div class="adm">
                         phpmyadmin
                     </div>
                 </a>
-                <a href="dev.html">
+                <a href="dev.php">
                     <div class="adm">
                         panel de gestion
                     </div>
                 </a>
-                <a href="dev.html">
+                <a href="https://share.pixwok.fr/">
                     <div class="perso">
                         Partage de Fichiers
                     </div>
@@ -79,7 +84,7 @@
                         Mes projets
                     </div>
                 </a>
-                <a  href="dev.html">
+                <a  href="dev.php">
                     <div class="commu">
                         web tv
                     </div>
@@ -97,7 +102,8 @@
             </div>
             <footer>
                 <a target="blank" href="https://twitter.com/pixwok"><i class="fab fa-twitter"></i></a>
-                <a href="mailto:contact@pixwok.fr"><i class="fas fa-envelope"></i></a>
+                <a target="blank" href="https://www.linkedin.com/in/maxime-guillot-99ba751b0/"><i class="fab fa-linkedin"></i></a>
+                <a target="blank" href="https://www.youtube.com/channel/UC807w5YO5oTvAThnOKTBPXQ?view_as=subscriber"><i class="fab fa-youtube"></i></a>
                 <a target="blank" href="https://github.com/Pixwok"><i class="fab fa-github"></i></a>
                 <a target="blank" href="https://www.instagram.com/pixwok/"><i class="fab fa-instagram"></i></a>
                 <a target="blank" href="https://www.twitch.tv/cappixwok"><i class="fab fa-twitch"></i></a>

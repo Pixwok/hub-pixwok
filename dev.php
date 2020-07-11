@@ -1,3 +1,8 @@
+<?php
+include('auth.php');
+redirect();
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +22,7 @@
 
     <div id="dev" class="content">
         <h3>Service en cours de développement</h3>
-        <a href="index.html">Retour vers le HUB</a>
+        <a href="index.php">Retour vers le HUB</a>
     </div>
 </body>
 </html>
