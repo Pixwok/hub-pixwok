@@ -84,6 +84,11 @@ redirect();
                         Mes projets
                     </div>
                 </a>
+                <a href="https://todoist.com/">
+                    <div class="perso">
+                        todo list
+                    </div>
+                </a>
                 <a  href="dev.php">
                     <div class="commu">
                         web tv
